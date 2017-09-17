@@ -1,16 +1,19 @@
 {
-  "name": "meilman",
-  "version": "0.0.0",
+  "name": "@bititrain/meilman",
+  "version": "1.0.0",
   "description": "meilman",
   "license": "MIT",
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/bititrain/meilman.git"
+  },
   "author": {
-    "name": "",
-    "email": "",
-    "url": ""
+    "name": "Mauricio Navarro Miranda",
+    "email": "mauricio@bititrain.com",
+    "url": "https://bititrain.com"
   },
   "keywords": [
-    ""
+    "telegram-bot"
   ],
   "files": [
     "lib"
@@ -30,6 +33,8 @@
     "watch:test": "jest --watch"
   },
   "dependencies": {
+    "@types/node-telegram-bot-api": "^0.28.0",
+    "node-telegram-bot-api": "^0.28.0"
   },
   "devDependencies": {
     "@types/jest": "^20.0.5",
@@ -58,5 +63,6 @@
       "js"
     ],
     "testEnvironment": "node"
-  }
+  },
+  "homepage": "https://bitbucket.org/bititrain/meilman#readme"
 }
