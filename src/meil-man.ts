@@ -18,11 +18,11 @@ export class MeilMan {
     this.superUsers.add(id);
   }
 
-  public messageSuperUsers(update: any) {
+  public messageSuperUsers(update: any, parseMode?: string) {
     const bot = this.bot;
 
     this.superUsers.forEach(sU =>
-      bot.sendMessage(sU, update.message.text)
+      bot.sendMessage(sU, update.message.text, { parse_mode: parseMode })
     );
   }
 
