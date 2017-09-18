@@ -18,11 +18,11 @@ export class MeilMan {
     this.superUsers.add(id);
   }
 
-  public messageSuperUsers(update: any, parseMode?: string) {
+  public messageSuperUsers(update: any, parseMode?: string, disablePreview?: string) {
     const bot = this.bot;
 
     this.superUsers.forEach(sU =>
-      bot.sendMessage(sU, update.message.text, { parse_mode: parseMode })
+      bot.sendMessage(sU, update.message.text, { disable_web_page_preview: disablePreview, parse_mode: parseMode })
     );
   }
 
